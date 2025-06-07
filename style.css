@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 40px 20px;
+}
+
+.about, .coming-soon {
+  padding: 30px 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  background-color: #1f1f1f;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
