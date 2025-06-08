@@ -54,7 +54,11 @@
   <header>
     <h1>🌌 SciQuest by Roushan</h1>
     <p>Explore science, DNA, moon mysteries, and more!</p>
+    <div style="text-align: center; margin: 20px 0;">
+  <input type="text" id="searchInput" placeholder="🔍 Search topics..." style="width: 60%; padding: 10px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc;">
+    </div>
   </header>
+  
 
   <div class="container<div class="post">
   <h2><a href="dinosaurs.html">🦖 What Happened to Dinosaurs After Asteroid Hit?</a></h2>
@@ -157,6 +161,21 @@
   <h2><a href="sambhala.html">🕉️ Mystery of Shambhala</a></h2>
   <p>A mythical kingdom said to be hidden in the Himalayas — is it real or symbolic?</p>
   </div>
+  <script>
+  document.getElementById('searchInput').addEventListener('keyup', function() {
+    const input = this.value.toLowerCase();
+    const posts = document.querySelectorAll('.post');
+
+    posts.forEach(post => {
+      const text = post.innerText.toLowerCase();
+      if (text.includes(input)) {
+        post.style.display = 'block';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  });
+  </script>
   <footer>
     &copy; 2025 SciQuest by Roushan. All rights reserved.
   </footer>
